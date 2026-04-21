@@ -697,6 +697,26 @@ def main():
     
     # Sidebar
     with st.sidebar:
+        st.markdown("## 👥 Kelompok 7")
+        
+        members = [
+        ("Gilbert Gultom", "11S25014"),
+        ("Jose Napitupulu", "11S25026"),
+        ("Tessa Manurung", "11S25045"),
+        ("Shalomytha Siregar", "11S25049"),
+        ("Michael Siburian", "11S25007"),
+        ("Renaldi Tambunan", "11S25022"),
+    ]
+        for name, nim in members:
+            with st.container():
+                st.markdown(f"""
+                🔹 **{name}**  
+                🆔 `{nim}`
+                """)
+
+        st.divider()
+        st.caption("Simulasi & Visualisasi Sistem Antrian")
+               
         st.markdown("## 📊 Parameter Simulasi")
         
         tingkat_kedatangan = st.number_input(
